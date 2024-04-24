@@ -3,6 +3,6 @@ let foodCost = 79.25;
 let tax = 6.54;
 let tip = 12.0;
 
-let todalDue = foodCost + tax + top;
+let totalDue = foodCost + tax + tip;
 
-console.log(`the total due is ${todalDue}`);
+console.log(`the total due is ${totalDue}`);
