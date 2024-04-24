@@ -1,4 +1,8 @@
-const intRate = 0.01;
+const readline = require("readline-sync");
+
+const intRate = readline.question(
+  "What is the interest rate you are hoping to get: "
+);
 
 const periodsToDouble = 72 / intRate;
 

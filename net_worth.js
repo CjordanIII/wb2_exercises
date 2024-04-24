@@ -1,5 +1,7 @@
-const liabilities = 100;
-const assets = 200;
+const readline = require("readline-sync");
+
+const liabilities = readline.question("what are you liabilities: ");
+const assets = readline.question("What are your assets: ");
 
 const net_worth = assets - liabilities;
 

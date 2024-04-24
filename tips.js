@@ -1,8 +1,18 @@
-// vars create as input for calculation
-let foodCost = 79.25;
-let tax = 6.54;
-let tip = 12.0;
+const readline = require("readline-sync");
 
-let totalDue = foodCost + tax + tip;
+try {
+  const foodCost = parseInt(readline.question("Cost of your meal: "));
+  const tip = parseFloat(
+    readline.question("What is your tip in decimal format: ")
+  );
 
-console.log(`the total due is ${totalDue}`);
+  if (!isNaN(foodCost) && !isNaN(tip)) {
+    const tax = 6.54;
+    const totalDue = foodCost + tax + foodCost * tip;
+    console.log(`The total due is ${totalDue}`);
+  } else {
+    throw new Error("Please enter valid numbers.");
+  }
+} catch (error) {
+  console.error(error.message);
+}

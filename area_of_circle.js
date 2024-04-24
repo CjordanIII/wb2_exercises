@@ -1,5 +1,7 @@
-const r = 4;
+readline = require("readline-sync");
 
-const area = Math.PI * Math.pow(r, 2);
+const radius = readline.question("Give me a radius and I'll give you radius: ");
 
-console.log(area);
+const area = Math.PI * Math.pow(radius, 2);
+
+console.log(`the area is ${area}`);

@@ -1,6 +1,8 @@
-const length = 0;
-const with = 10
+readline = require("readline-sync");
 
-const area = l*w
+const length = readline.question("Give me length:  ");
+const width = readline.question("Give me width:  ");
 
-console.log(`the area off this rectangle is ${area}`)
+const area = l * w;
+
+console.log(`the area off this rectangle is ${area}`);

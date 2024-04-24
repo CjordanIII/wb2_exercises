@@ -1,5 +1,7 @@
-const bill = 100;
-const tip = 0.15;
+const readline = require("readline-sync");
+
+const bill = readline.question("What is your bill: ");
+const tip = readline.question("Tip decimal:");
 
 const total = bill * tip;
 
