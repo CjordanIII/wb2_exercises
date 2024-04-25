@@ -7,7 +7,7 @@ function payRules() {
     let totalComp;
     // check if number is valid
     if (!isNaN(payRate) || !isNaN(hoursWorked)) {
-      if (hoursWorked >= 40) {
+      if (hoursWorked > 40) {
         payRate = payRate * 1.5;
         totalComp = payRate * hoursWorked;
         console.log("total Comp: " + totalComp);
