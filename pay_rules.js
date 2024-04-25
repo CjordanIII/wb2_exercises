@@ -6,16 +6,16 @@ function payRules() {
     const hoursWorked = parseFloat(readline.question("hours worked:"));
     let totalComp;
     // check if number is valid
-    if (!isNaN(payRate) || !isNaN(hoursWorked)) {
+    if (!isNaN(payRate) && !isNaN(hoursWorked)) {
       if (hoursWorked > 40) {
         payRate = payRate * 1.5;
         totalComp = payRate * hoursWorked;
-        console.log("total Comp: " + totalComp);
+        console.log("total Comp: " + totalComp.toFixed(2));
         // breaks out of the function to avoid loop
         return 0;
       } else {
         totalComp = payRate * hoursWorked;
-        console.log("total Comp: " + totalComp);
+        console.log("total Comp: " + totalComp.toFixed(2));
         // breaks out of the function to avoid loop
         return 0;
       }
