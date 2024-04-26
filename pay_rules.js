@@ -10,8 +10,9 @@ function payRules() {
       if (hoursWorked > 40) {
         payRate = payRate * 1.5; // todo fix later
 
-        totalComp = payRate * hoursWorked;
-        console.log("total Comp: " + totalComp.toFixed(2));
+        totalComp = payRate * (hoursWorked - 40);
+        let opt = 40 * payRate + totalComp;
+        console.log("total Comp: " + opt.toFixed(2));
         // breaks out of the function to avoid loop
         return 0;
       } else {

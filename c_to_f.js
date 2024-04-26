@@ -13,7 +13,7 @@ const celsiusToFahrenheit = () => {
       console.log("Please enter a number");
     }
 
-    const shouldquit = readline.question("quit?:");
+    const shouldquit = readline.question("quit? yes or no:");
 
     if (shouldquit.toLowerCase() === "yes") {
       // base case
