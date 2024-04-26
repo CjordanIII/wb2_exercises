@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script defer type="text/javascript" src="./scripts.js"></script>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="number1Feild">Number 1: </label>
+        <input
+          type="number"
+          id="number1Feild"
+          name="number1Feild"
+          placeholder="Enter num 1"
+        />
+      </div>
+      <div>
+        <label for="number2Feild"> Number 2: </label>
+        <input
+          type="number"
+          id="number2Feild"
+          name="number2Feild"
+          placeholder="Enter num 2"
+        />
+      </div>
+      <div>
+        <label for="answerField"> answer field: </label>
+        <input type="number" id="answerField" name="answerField" readonly />
+      </div>
+      <div>
+        <button id="addButton" type="button">Add</button>
+        <button id="subtractButton" type="button">Subtract</button>
+        <button id="multiplyButton" type="button">Multiply</button>
+        <button id="divideButton" type="button">Divide</button>
+        <button id="clearButton" type="button">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
